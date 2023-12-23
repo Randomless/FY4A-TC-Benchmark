@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>MT-GN</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">MT-GN: Multi-task Learning based Graph Residual Network for
+              Tropical Cyclone Intensity Estimation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Zhitao Zhao</a>,</span>
+              <span class="author-block">
+                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Zheng Zhang</a>,</span>
+              <span class="author-block">
+                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Ping Tang</a>
+              </span>
+              <span class="author-block">
+                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Xiaofeng Wang</a>
+              </span>
+              <span class="author-block">
+                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Linli Cui</a>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Aerospace Information Research Institute, Chinese Academy of Sciences</span>
+              <span class="author-block">Shanghai Ecological Forecasting and Remote Sensing Center, Shanghai
+                Meteorological Bureau</span>
+              <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark" onclick="showPrompt()">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Supplementary PDF link -->
+                <span class="link-block">
+                  <a href="static/pdfs/Supplementary Material.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/Randomless/FY4A-TC-Benchmark" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Tropical cyclone (TC) is a type of severe weather system that damages human property. Understanding TC's
+              mechanics is crucial for disaster management.
+              In this study, we propose a multi-task learning framework named Multi-task Graph Residual Network(MT-GN)
+              to classify and estimate the intensity of TC from FY-4A geostationary meteorological satellite images. And
+              we construct a new benchmark dataset collected from the FY-4A satellite for both TC classification and
+              intensity estimation tasks. Four different methodologies to classify TC and estimate the intensity of TC
+              are fairly compared in our dataset.
+              We discover that accurate classification and estimation of TC, which are usually achieved separately,
+              require co-related knowledge from each other. Thus, we train a convolution feature extractor in a
+              multi-task way.
+              Furthermore, we build a task-dependency embedding module using the Graph Convolution Network(GCN), which
+              further drives our model to reach better performance.
+              Finally, to overcome the influence of the unbalanced distribution of TC category samples, we introduced a
+              class-balanced loss to our model.
+              Experimental results on the dataset show that the classification and estimation performance are improved
+              through our improvement. With an overall root mean square error (RMSE) of 9.50 knots and F1-score of 0.64,
+              our MT-GN model achieves satisfactory performance.
+              The results demonstrate the potential of applying multi-task learning for TC study. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+
+  <!-- Image carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item vertical-center">
+            <!-- Your image here -->
+            <img src="static/images/fig-2-r1.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              Overview of the proposed framework MT-GN.
+            </h2>
+          </div>
+          <div class="item vertical-center">
+            <!-- Your image here -->
+            <img src="static/images/fig-1.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              Diagrams of three deep learning based intensity estimation models.
+            </h2>
+          </div>
+
+          <div class="item vertical-center">
+            <!-- Your image here -->
+            <img src="static/images/fig-true-color-annotation.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              FY-4A data-based tropical cyclone image extraction. The images are extracted with a 240 × 240 pixel
+              rectangle based on the tropical cyclone center location obtained from best-track data.
+            </h2>
+          </div>
+          <div class="item vertical-center">
+            <!-- Your image here -->
+            <img src="static/images/fig9.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              14th band images of six pairs of TC samples. Note the estimated speeds are the results of our MT-GN.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Paper poster -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title">Supplementary Material</h2>
+
+        <iframe src="static/pdfs/Supplementary Material.pdf" width="100%" height="550">
+        </iframe>
+
+      </div>
+    </div>
+  </section>
+  <!--End paper poster -->
+
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{xxx,
+        author    = {Zhitao Zhao, Zheng Zhang, Ping Tang Xiaofeng Wang Linli Cui},
+        title     = {MT-GN: Multi-task Learning based Graph Residual Network for Tropical Cyclone Intensity Estimation},
+        journal   = {xxx},
+        year      = {xxx},
+}</code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the of this website, we just ask that you link back to this page in the footer.
+              <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+<script>
+  function showPrompt() {
+    var confirmation = confirm("Paper is undergoing review... ");
+    if (!confirmation) {
+      event.preventDefault();  // Prevent the default link behavior if not confirmed
+    }
+  }
+</script>
+
+
+</html>
+
