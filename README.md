@@ -14,7 +14,7 @@ This is a benchmark dataset for TC intensity estiomation
   <table align="center">
     <tr>
     <td>
-      <img src="static/images/fig-1.png">
+      <img src="static/images/fig-2-r1.png">
     </td>
     </tr>
   </table>
