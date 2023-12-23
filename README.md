@@ -9,7 +9,7 @@ This is a benchmark dataset for TC intensity estiomation
     <br>
     <br>
         <!-- <a href="https://arxiv.org/abs/2307.09481"><img src='https://img.shields.io/badge/arXiv-AnyDoor-red' alt='Paper PDF'></a> -->
-        <a href='https://xx.github.io/xxx'><img src='https://xx/xx' alt='Project Page'></a>
+        <a href='https://xx.github.io/xxx'><img src='https://img.shields.io/badge/Project_Page-MTGN-blue' alt='Project Page'></a>
     <br>
   </p>
   
